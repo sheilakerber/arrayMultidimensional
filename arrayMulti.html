@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array multidimensional</title>
+        <link rel="stylesheet" href="arrayMulti.css">
+    </head>
+    <body>
+
+        <div>
+            <h2>Complete as informações abaixo</h2>
+
+            <section>
+                <p>Nome do aluno(a)</p>
+                <input type="text" placeholder="Nome completo" id="nomeAluno"><br>
+                <button onclick="limparNome()">Limpar</button>
+
+            </section>
+
+            <section id="checkboxMaterias">
+                <p>Matérias a cursar</p>
+                <input type="checkbox" name="materias" value="Matemática">
+                <label>Matemática</label><br>
+                <input type="checkbox" name="materias" value="Portugues">
+                <label>Português</label><br>
+                <input type="checkbox" name="materias" value="Ingles">
+                <label>Inglês</label><br>
+                <input type="checkbox" name="materias" value="Biologia">
+                <label>Biologia</label><br>
+                <input type="checkbox" name="materias" value="História">
+                <label>História</label><br>
+            </section>
+
+            <button onclick="salvarDados()">Salvar</button><br>
+
+        </div>
+
+        <script src="arrayMulti.js"></script>
+    </body>
+</html>
