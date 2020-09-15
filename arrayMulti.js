@@ -1,9 +1,7 @@
 /* Descricao: HTML 1 input(nome) e 5 checkbox[matematica, portugues, ingles, biologia, historia].  Ao clicar no botão salvar vai gerar um objeto com os dados inseridos pelo usuário e salvar no Array. */
 
-
 //array alunos
 let alunos = []
-
 
 function salvarDados() {
     //atribuindo valor as variaveis a partir dos inputs do html
@@ -25,6 +23,14 @@ function salvarDados() {
     console.log("alunos", alunos)
     console.log("aluno", aluno)
 
+    //confirmacao de dados e limpeza automatica dos campos
+    alert("Dados salvos com sucesso!")
+    document.getElementById("nomeAluno").value = ""
+
+    var elements = document.querySelectorAll('input[type=checkbox]:checked')
+    for (i = 0; i < elements.length; i++) {
+        elements[i].checked = false
+    }
 }
 
 //funcao para limpar o campo `nome`
